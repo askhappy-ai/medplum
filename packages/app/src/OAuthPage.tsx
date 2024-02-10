@@ -41,7 +41,7 @@ export function OAuthPage(): JSX.Element | null {
       chooseScopes={scope !== 'openid'}
     >
       <Logo size={32} />
-      <Title>Sign in to Medplum</Title>
+      <Title>Sign in to Happy RCM Admin Portal</Title>
     </SignInForm>
   );
 }

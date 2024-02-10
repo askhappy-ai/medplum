@@ -5,22 +5,9 @@ export interface LogoProps {
 
 export function Logo(props: LogoProps): JSX.Element {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 491 491" style={{ width: props.size, height: props.size }}>
-      <title>Medplum Logo</title>
-      <path fill={props.fill ?? '#ad7136'} d="M282 67c6-16 16-29 29-40L289 0c-22 17-37 41-43 68l17 23 19-24z" />
-      <path
-        fill={props.fill ?? '#946af9'}
-        d="M311 63c-17 0-33 4-48 11-16-7-32-11-49-11-87 0-158 96-158 214s71 214 158 214c17 0 33-4 49-11 15 7 31 11 48 11 87 0 158-96 158-214S398 63 311 63z"
-      />
-      <path
-        fill={props.fill ?? '#7857c5'}
-        d="M231 489l-17 2c-87 0-158-96-158-214S127 63 214 63l17 1c-39 12-70 102-70 213s31 201 70 212z"
-      />
-      <path
-        fill={props.fill ?? '#40bc26'}
-        d="M207 220a176 176 0 01-177 43A176 176 0 01251 43l1 5c17 59 2 125-45 172z"
-      />
-      <path fill={props.fill ?? '#33961e'} d="M252 48A421 421 0 0057 270l-27-7A176 176 0 01251 43l1 5z" />
+    <svg width={props.size} height={(props.size * 37) / 35} viewBox="0 0 35 37" fill={props.fill ?? 'none'} xmlns="http://www.w3.org/2000/svg">
+      <title>Happy Logo</title>
+      <path id="Vector" d="M22.2477 0H11.8554C5.3145 0 0 5.29797 0 11.8186V22.1786C0 28.6991 5.3145 33.9971 11.8554 33.9971H25.0664L34.1031 37V11.8186C34.1031 5.29797 28.7887 0 22.2477 0ZM17.0408 25.5032C17.0408 25.5032 16.8257 25.5032 16.7181 25.5032C13.8564 25.4174 11.1239 24.2377 9.07983 22.2L10.7366 20.5484C12.3718 22.1786 14.5019 23.1009 16.7826 23.1652C19.1494 23.2296 21.3225 22.3716 22.9578 20.7414L24.6145 22.393C22.592 24.4093 19.924 25.5032 17.0408 25.5032Z" fill={props.fill ?? "#8F6AFD"}/>
     </svg>
   );
 }
